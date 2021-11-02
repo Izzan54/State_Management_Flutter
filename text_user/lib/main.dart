@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:text_user/textformat.dart';
-import 'package:text_user/textstate.dart';
 
 void main() {
   runApp(MyApp());
@@ -54,7 +52,7 @@ class _ButtonWidgetState extends State<ButtonWidget> {
                             context: context,
                             builder: (context) {
                               return AlertDialog(
-                                // Retrieve the text the that user has entered by using the
+                                // Retrieve the text the that user has entered by us
                                 content: Text(
                                     (snapshot.hasData ? snapshot.data : "")
                                         .toString()
